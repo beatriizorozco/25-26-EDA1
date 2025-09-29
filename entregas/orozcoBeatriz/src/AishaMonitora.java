@@ -1,13 +1,17 @@
-public class Aisha {
-    private Fila fila;
+public class AishaMonitora extends Monitor {
+    private Fila fila = new Fila();
 
-    public Aisha(Fila fila) {
-        this.fila = fila;
+    public AishaMonitora(String nombre) {
+        super(nombre);
     }
 
     public void agregarAFila(Nino n) {
         fila.agregar(n);
-        System.out.println("Aisha pone en la fila a " + n.getNombre());
+        System.out.println(nombre + " pone en la fila a " + n.getNombre());
+    }
+
+    public int tamanoFila() {
+        return fila.size();
     }
 
     public void iniciarJuego() {
@@ -17,3 +21,4 @@ public class Aisha {
         juego.jugar();
     }
 }
+

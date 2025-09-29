@@ -2,8 +2,8 @@ import java.util.Random;
 
 public class Ludoteca {
     private Fila fila = new Fila();
-    private Lidia lidia = new Lidia();
-    private Aisha aisha = new Aisha(fila);
+    private LidiaMonitora lidia = new LidiaMonitora("Lidia");
+    private AishaMonitora aisha = new AishaMonitora("Aisha");
     private Random random = new Random();
     private int contadorNinos = 1;
     private boolean juegoEnCurso = false;

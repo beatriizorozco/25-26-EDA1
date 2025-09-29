@@ -21,4 +21,10 @@ public class Fila {
     public Nino[] getLista() {
         return lista;
     }
+
+     public Nino[] vaciar() {
+        Nino[] copia = lista;
+        lista = new Nino[0];
+        return copia;
+    }
 }
